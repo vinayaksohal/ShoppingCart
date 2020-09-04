@@ -1,0 +1,21 @@
+﻿@model CourseListVM
+
+<h1>@Model.SelectedCategoryName</h1>
+<hr />
+@foreach (var course in Model.Courses)
+{
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=@course.ImageURL alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@course.Title</h5>
+            <p class="card-text">@course.Category.Name</p>
+            <p class="card-text">@course.Description</p>
+            <a asp-controller="ShoppingCatalogue"  asp-action="Details"
+               asp-route-id="@course.CourseId" class="btn btn-primary">
+                Course Details
+            </a>
+            <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+    </div>
+}
