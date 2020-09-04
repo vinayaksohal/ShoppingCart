@@ -32,6 +32,9 @@ namespace ShoppingCart
             services.AddScoped<ICategoryRepository, EFCategoryRepository>();
             services.AddScoped<ICourseRepository, EFCourseRepository>();
             services.AddControllersWithViews();
+            services.AddScoped<MyShoppingCart>(s => MyShoppingCart.GetShoppingCart(s));
+            services.AddHttpContextAccessor();
+            services.AddSession();
             
         }
 
@@ -46,6 +49,7 @@ namespace ShoppingCart
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

@@ -15,7 +15,11 @@
                asp-route-id="@course.CourseId" class="btn btn-primary">
                 Course Details
             </a>
-            <a href="#" class="btn btn-primary">Add to cart</a>
+            <a 
+               asp-controller="ShoppingCart"
+               asp-action="AddToShoppingCart"
+               asp-route-courseId=" @course.CourseId"
+               class="btn btn-primary">Add to cart</a>
         </div>
     </div>
 }

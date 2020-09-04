@@ -11,6 +11,10 @@
                 <p class="card-text"><small class="text-muted">@Model.Category.Name</small></p>
                 <p class="card-text">@Model.Description</p>
                 <p class="card-text">@Model.Fee</p>
+                <a asp-controller="ShoppingCart"
+                   asp-action="AddToShoppingCart"
+                   asp-route-courseId=" @Model.CourseId"
+                   class="btn btn-primary">Add to cart</a>
             </div>
         </div>
     </div>

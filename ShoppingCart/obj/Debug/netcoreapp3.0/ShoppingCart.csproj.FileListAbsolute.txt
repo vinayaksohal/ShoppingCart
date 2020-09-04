@@ -146,3 +146,4 @@ C:\Users\user\source\repos\ShoppingCart\ShoppingCart\obj\Debug\netcoreapp3.0\Sho
 C:\Users\user\source\repos\ShoppingCart\ShoppingCart\obj\Debug\netcoreapp3.0\ShoppingCart.pdb
 C:\Users\user\source\repos\ShoppingCart\ShoppingCart\obj\Debug\netcoreapp3.0\ShoppingCart.genruntimeconfig.cache
 C:\Users\user\source\repos\ShoppingCart\ShoppingCart\obj\Debug\netcoreapp3.0\Razor\Views\ShoppingCatalogue\Details.cshtml.g.cs
+C:\Users\user\source\repos\ShoppingCart\ShoppingCart\obj\Debug\netcoreapp3.0\Razor\Views\ShoppingCart\Index.cshtml.g.cs
